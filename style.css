@@ -1,8 +1,17 @@
+/*head*/
 .header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
+#name {
+  margin: 20px;
+  /* padding: 5px; */
+}
+.contacts {
+  margin: 20px;
+}
+/*head*/
 
 /*body*/
 .skills {
@@ -18,7 +27,7 @@
   width: 33%;
   display: flex;
   flex-direction: row;
-  margin: 10px;
+  /* margin: 10px; */
 }
 
 /* .individual_skills {
@@ -37,11 +46,11 @@
 .education {
   height: 800px;
   width: 50%;
-  margin: 10px;
+  margin: 20px;
 }
 .experience {
   height: 800px;
   width: 50%;
-  margin: 10px;
+  margin: 20px;
 }
 /*footer*/ ;
