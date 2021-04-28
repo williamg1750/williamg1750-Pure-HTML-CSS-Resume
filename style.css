@@ -1,0 +1,47 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/*body*/
+.skills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.skill_box {
+  height: 400px;
+  width: 33%;
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+
+/* .individual_skills {
+  display: flex;
+  flex-direction: row;
+} */
+/*body*/
+
+/*footer*/
+.footer {
+  display: flex;
+  flex-direction: row;
+  /* align-content: center; */
+  justify-content: space-evenly;
+}
+.education {
+  height: 800px;
+  width: 50%;
+  margin: 10px;
+}
+.experience {
+  height: 800px;
+  width: 50%;
+  margin: 10px;
+}
+/*footer*/ ;
