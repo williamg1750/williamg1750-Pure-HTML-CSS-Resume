@@ -1,7 +1,13 @@
+/*global*/
 body {
   font: normal 20px Verdana, Arial, sans-serif;
-  /* font: sans-serif; */
+  background-color: yellow;
 }
+hr {
+  margin: 30px;
+}
+/*global*/
+
 /*head*/
 .header {
   display: flex;
@@ -22,23 +28,43 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  /* align-content: center; */
+  align-content: center;
   justify-content: space-evenly;
+  justify-content: center;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    background-color: lightblue;
+  }
+  .skill_box {
+    /* height: 500px; */
+    width: 350px;
+    display: flex;
+    flex-direction: row;
+    padding: 2px;
+    margin: 10px;
+  }
+  .skills {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    align-content: center;
+    justify-content: center;
+    justify-content: center;
+  }
 }
 
 .skill_box {
-  height: 400px;
-  width: 33%;
+  width: 30%;
+  max-width: 500px;
+  min-width: 350px;
   display: flex;
   flex-direction: row;
-  /* padding: 2px;
-  margin: 2px; */
+  padding: 2px;
+  margin: 10px;
 }
 
-/* .individual_skills {
-  display: flex;
-  flex-direction: row;
-} */
 /*body*/
 
 /*footer*/
@@ -48,8 +74,15 @@ body {
   /* align-content: center; */
   justify-content: space-evenly;
 }
+@media only screen and (min-width: 400px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-evenly;
+  }
+}
 .education {
-  height: 800px;
   width: 50%;
   margin: 20px;
 }
