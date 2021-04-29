@@ -1,7 +1,6 @@
 /*global*/
 body {
   font: normal 20px Verdana, Arial, sans-serif;
-  background-color: yellow;
 }
 hr {
   margin: 30px;
@@ -33,28 +32,6 @@ hr {
   justify-content: center;
 }
 
-@media screen and (max-width: 800px) {
-  body {
-    background-color: lightblue;
-  }
-  .skill_box {
-    /* height: 500px; */
-    width: 350px;
-    display: flex;
-    flex-direction: row;
-    padding: 2px;
-    margin: 10px;
-  }
-  .skills {
-    display: flex;
-    flex-direction: column;
-    /* flex-wrap: wrap; */
-    align-content: center;
-    justify-content: center;
-    justify-content: center;
-  }
-}
-
 .skill_box {
   width: 30%;
   max-width: 500px;
@@ -71,24 +48,58 @@ hr {
 .footer {
   display: flex;
   flex-direction: row;
-  /* align-content: center; */
+  align-content: center;
   justify-content: space-evenly;
 }
-@media only screen and (min-width: 400px) {
+
+.education {
+  width: 50%;
+  max-width: 700px;
+  margin: 20px;
+}
+.experience {
+  width: 50%;
+  max-width: 700px;
+  margin: 20px;
+}
+/*footer*/
+
+/*smaller screens and mobile support*/
+@media screen and (max-width: 800px) {
+  body {
+    background-color: lightblue;
+  }
+  .skill_box {
+    /* height: 500px; */
+    width: 350px;
+    display: flex;
+    flex-direction: row;
+    padding: 2px;
+    margin: 10px;
+  }
+  .skills {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+  }
   .footer {
     display: flex;
     flex-direction: column;
     align-content: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
+  }
+  .education {
+    width: 90%;
+    margin: 20px;
+    align-content: center;
+    justify-content: space-between;
+  }
+  .experience {
+    width: 90%;
+    margin: 20px;
+    align-content: center;
+    justify-content: space-between;
   }
 }
-.education {
-  width: 50%;
-  margin: 20px;
-}
-.experience {
-  height: 800px;
-  width: 50%;
-  margin: 20px;
-}
-/*footer*/ ;
+/*smaller screens and mobile support*/
